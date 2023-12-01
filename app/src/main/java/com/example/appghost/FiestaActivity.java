@@ -28,7 +28,7 @@ public class FiestaActivity extends AppCompatActivity {
                 LinearLayout scroll = (LinearLayout) findViewById(R.id.linear_layout);
                     LinearLayout linearLayout = new LinearLayout(boton.getContext());
                         TextView myText = new TextView(boton.getContext());
-                        myText.setText("Ven a Ghost Party!");
+                        myText.setText("Ven a Ghost Party!!!");
                         linearLayout.setOrientation(LinearLayout.VERTICAL);
                     linearLayout.addView(myText);
                 scroll.addView(linearLayout);
@@ -43,9 +43,13 @@ public class FiestaActivity extends AppCompatActivity {
             Intent miIntent = new Intent(FiestaActivity.this, MainActivity.class);
             startActivity(miIntent);
         } else if (view.getId() == R.id.btn_login) {
-
+            Intent miIntent = new Intent(FiestaActivity.this, MainActivity.class);
+            startActivity(miIntent);
         } else if (view.getId() == R.id.cambio_imagen) {
             imagen.setImageResource(R.drawable.predeterminada2);
+        } else if (view.getId() == R.id.btn_mas_fiestas) {
+            Intent miIntent = new Intent(FiestaActivity.this, MainActivity.class);
+            startActivity(miIntent);
         }
     }
 }
