@@ -16,15 +16,13 @@ public class MainActivity extends AppCompatActivity {
 
     public void onClick(View view) {
 
-        switch (view.getId()){
-            case R.id.btn_ir_fiesta:
-                Intent miIntent= new Intent(MainActivity.this, FiestaActivity.class);
-                startActivity(miIntent);
-                break;
+        if (view.getId() == R.id.btn_ir_fiesta){
+            Intent miIntent= new Intent(MainActivity.this, FiestaActivity.class);
+            startActivity(miIntent);
+        } else if (view.getId() == R.id.btn_login) {
 
-            case R.id.btn_login:
-                break;
         }
+
 
 
 
